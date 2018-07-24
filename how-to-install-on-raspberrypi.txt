@@ -20,6 +20,12 @@ Please execute the following steps:
 	
 
 
-Obs: If a native error lib appears with libnetty_tcnative, you may have to compile netty-tcnative (https://github.com/netty/netty-tcnative) from source and install its dependencies beforehand (autoconf, automake, golang, ninja, glibc-devel...).
+Obs: If a native error lib appears with libnetty_tcnative, you may have to compile netty-tcnative (https://github.com/netty/netty-tcnative) from source and install its dependencies beforehand:
+
+	"sudo apt-get update"
+	"sudo apt-get install ninja-build cmake perl golang libssl-dev libapr1-dev autoconf automake libtool maven"
+	
+To compile netty-tcnative, checkout version 2.0.9.Final, change arch to 32 bits in pom.xml, and finally run:
+	"mvn install -DskipTests"
 
 Done.
