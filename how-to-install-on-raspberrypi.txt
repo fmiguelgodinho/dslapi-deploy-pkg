@@ -1,0 +1,9 @@
+Please execute the following steps:
+
+1. Clone this repository;
+2. Install mongodb on the pi "sudo apt-get install mongodb";
+3. Run mongodb on a forked shell "sudo mongod";
+4. Execute the jar file with root permissions (as it will attach to port 443) "sudo java -jar dsl-api-1.0.0-jar-with-dependencies.jar";
+
+Done.
+
